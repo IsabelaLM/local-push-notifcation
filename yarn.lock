@@ -5282,6 +5282,10 @@ react-is@^16.8.1, react-is@^16.8.4, react-is@^16.8.6:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.8.6.tgz#5bbc1e2d29141c9fbdfed456343fe2bc430a6a16"
   integrity sha512-aUk3bHfZ2bRSVFFbbeVS4i+lNPZr3/WM5jT2J5omUVV1zzcs1nAaf3l51ctA5FFvCRbhrH0bdAsRRQddFJZPtA==
 
+"react-native-push-notification@git+https://git@github.com/zo0r/react-native-push-notification.git":
+  version "3.1.7"
+  resolved "git+https://git@github.com/zo0r/react-native-push-notification.git#4e53d8cbbf5fe0f623b3ca6b58e0ef097834b48b"
+
 react-native@0.60.3:
   version "0.60.3"
   resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.60.3.tgz#da010bc5b63201166562ddeff1cd3e07da34d1de"
