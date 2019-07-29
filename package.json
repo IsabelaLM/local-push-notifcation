@@ -10,7 +10,8 @@
   "dependencies": {
     "react": "16.8.6",
     "react-native": "0.60.3",
-    "react-native-push-notification": "git+https://git@github.com/zo0r/react-native-push-notification.git"
+    "react-native-push-notification": "git+https://git@github.com/zo0r/react-native-push-notification.git",
+    "reactotron-react-native": "^3.6.4"
   },
   "devDependencies": {
     "@babel/core": "^7.5.4",
