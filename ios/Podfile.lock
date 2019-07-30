@@ -72,6 +72,8 @@ PODS:
     - React-Core (= 0.60.3)
   - React-RCTNetwork (0.60.3):
     - React-Core (= 0.60.3)
+  - React-RCTPushNotification (0.60.3):
+    - React-Core (= 0.60.3)
   - React-RCTSettings (0.60.3):
     - React-Core (= 0.60.3)
   - React-RCTText (0.60.3):
@@ -101,6 +103,7 @@ DEPENDENCIES:
   - React-RCTImage (from `../node_modules/react-native/Libraries/Image`)
   - React-RCTLinking (from `../node_modules/react-native/Libraries/LinkingIOS`)
   - React-RCTNetwork (from `../node_modules/react-native/Libraries/Network`)
+  - React-RCTPushNotification (from `../node_modules/react-native/Libraries/PushNotificationIOS`)
   - React-RCTSettings (from `../node_modules/react-native/Libraries/Settings`)
   - React-RCTText (from `../node_modules/react-native/Libraries/Text`)
   - React-RCTVibration (from `../node_modules/react-native/Libraries/Vibration`)
@@ -146,6 +149,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/Libraries/LinkingIOS"
   React-RCTNetwork:
     :path: "../node_modules/react-native/Libraries/Network"
+  React-RCTPushNotification:
+    :path: "../node_modules/react-native/Libraries/PushNotificationIOS"
   React-RCTSettings:
     :path: "../node_modules/react-native/Libraries/Settings"
   React-RCTText:
@@ -176,12 +181,13 @@ SPEC CHECKSUMS:
   React-RCTImage: 963859de2b05d2037d1b7842cdbddc8d7f3a2f3b
   React-RCTLinking: 5998a7db9a6156ed112b006d01f76b2d1cc83d98
   React-RCTNetwork: 0b676e8194f3f893db813007d37e37e9820173a3
+  React-RCTPushNotification: cb885c81c2b22aa6f61ccc31e480a8bb1ebae5ab
   React-RCTSettings: fdd7606f1b6050eced69fc6046d5db6768aefd57
   React-RCTText: 36c0532feb5521cb295ba80e7e44b70cf1c36fc7
   React-RCTVibration: dabb8d59bb47e1d9124b3f77bfdc1b33d42b0a74
   React-RCTWebSocket: f32b93e0953d7c07fd5dd45305406282cfdc95cf
   yoga: 88c514f310aff89b94a14c5fbf44b95735af0cb7
 
-PODFILE CHECKSUM: 3ce374ba69d5f226ec14e6436b0e39db86ebbe14
+PODFILE CHECKSUM: df06f78dabd88b2e65fbae2e958ae9b593047931
 
 COCOAPODS: 1.5.3
