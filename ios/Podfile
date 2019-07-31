@@ -31,6 +31,8 @@ target 'RememberMe' do
   pod 'React-RCTPushNotification', :path => '../node_modules/react-native/Libraries/PushNotificationIOS'
 
 
+  pod 'react-native-onesignal', :path => '../node_modules/react-native-onesignal'
+
   target 'RememberMeTests' do
     inherit! :search_paths
     # Pods for testing

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 
 import PushNotification from 'react-native-push-notification';
+import OneSignal from 'react-native-onesignal';
 import PushController from './components/PushController';
 
 import './config/ReactotronConfig';
@@ -41,7 +42,34 @@ export default class App extends Component {
     this.state = {
       // seconds: 60,
     };
+
+    OneSignal.init('36a5bc55-52b8-4a1a-9ba6-71c313ab109f');
+    OneSignal.addEventListener('received', this.onReceived);
+    OneSignal.addEventListener('opened', this.onOpened);
+    OneSignal.addEventListener('ids', this.onIds);
+
+    console.log('Teste log');
   }
+
+  componentWillUnmount() {
+    OneSignal.removeEventListener('received', this.onReceived);
+    OneSignal.removeEventListener('opened', this.onOpened);
+    OneSignal.removeEventListener('ids', this.onIds);
+  }
+
+  onReceived = data => {
+    console.tron.log(`OneSignal - onReceived: ${data}`);
+    console.log(`OneSignal - onReceived`);
+    console.log(data);
+  };
+
+  onOpened = notification => {
+    console.tron.log('OneSignal - onOpened');
+  };
+
+  onIds = id => {
+    console.tron.log('OneSignal - onIds');
+  };
 
   sendInstantNotification = () => {
     PushNotification.localNotification({
